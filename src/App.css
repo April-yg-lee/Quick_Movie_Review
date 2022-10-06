@@ -1,38 +1,89 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  overflow: auto;
+  width: 400px;
+  height: 600px;
+  background-color: rgb(236, 233, 233);
+  margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+  padding: 3%;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  background: rgb(165, 187, 249);
+  background: linear-gradient(
+    200deg,
+    rgba(165, 187, 249, 1) 0%,
+    rgba(251, 251, 251, 1) 100%
+  );
+}
+
+header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header a {
+  text-decoration: none;
+  color: rgb(55, 19, 198);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  padding: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav ol {
+  padding: 5%;
+}
+
+nav ol li {
+  font-size: x-large;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.bodyArticle {
+  padding: 5%;
+}
+
+.bodyArticle p {
+  padding-top: 5%;
+}
+
+.createBtn, .updateBtn, .deleteBtn {
+  padding: 5%;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.createBtn:hover {
+  transform: scale(2)
+}
+
+.createArt {
+  padding: 5%;
+}
+
+.createArt form p {
+  padding-bottom: 1%;
+}
+
+.createArt form input, .createArt form textarea {
+  padding: 1%;
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(55, 19, 198);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  cursor: pointer;
+  transition-duration: 0.5s ;
 }
